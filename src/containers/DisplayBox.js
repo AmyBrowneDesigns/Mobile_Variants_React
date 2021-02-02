@@ -1,8 +1,9 @@
-import React from "react";
+import { render } from "@testing-library/react";
+import React, {useState} from "react";
 import ProductList from "../components/ProductList";
 
 const DisplayBox = () => {
-    const [Products, setProducts] = useState(
+    const [products, setProducts] = useState(
         [
             {
                 id : 1,
@@ -55,12 +56,13 @@ const DisplayBox = () => {
             }
         ]
     )
-    return (
+    
+        return (
         <>
-        <h1>I'm the display box for all the phones to show</h1>
-        <ProductList/>
+        <h1>Products</h1>
+        <ProductList products={products}/>
         </>
-    );
+        );
 }
 
 export default DisplayBox;
