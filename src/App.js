@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import DisplayBox from "./containers/DisplayBox";
 
 function App() {
 
   return (
-    <h1>Mobile Phones For Sale</h1>
+    <DisplayBox />
   );
 }
 
