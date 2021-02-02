@@ -5,8 +5,9 @@ const ProductList = () => {
     return (
         <>
         <h1>I'm the list of products</h1>
-        <ProductItem/>
-        <ProductItem/>
+        <ProductItem />
+        <ProductItem />
+        <ProductItem />
         </>
     );
 }

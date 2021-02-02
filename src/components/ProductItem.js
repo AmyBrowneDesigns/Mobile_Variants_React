@@ -2,7 +2,9 @@ import React from "react";
 
 const ProductItem = () => {
     return (
-        <h1>I'm one of the products</h1>
+        <>
+        <h4>I'm an individual product</h4>
+        </>
     );
 }
 
