@@ -1,13 +1,15 @@
 import React from "react";
 import ProductItem from "./ProductItem";
 
-const ProductList = () => {
+const ProductList = ({products}) => {
+    const productsNodes = products.map(product => {
+        return ( 
+            <ProductItem size = {product.size} color ={product.color} grade ={product.grade} price ={product.price}></ProductItem>
+        );
+    });
     return (
         <>
-        <h1>I'm the list of products</h1>
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
+        {productsNodes}
         </>
     );
 }

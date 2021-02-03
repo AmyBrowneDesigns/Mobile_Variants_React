@@ -1,9 +1,15 @@
 import { render } from "@testing-library/react";
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import ProductList from "../components/ProductList";
 
 const DisplayBox = () => {
-    const [products, setProducts] = useState(
+    const [products, setProducts] = useState ([])
+    useEffect(()=>{
+        showProducts()
+    }, [])
+    const showProducts = () => {
+        setProducts (
+
         [
             {
                 id : 1,
@@ -56,10 +62,11 @@ const DisplayBox = () => {
             }
         ]
     )
-    
+    }
+
         return (
         <>
-        <h1>Products</h1>
+        <h1>All Our Phones</h1>
         <ProductList products={products}/>
         </>
         );

@@ -1,9 +1,9 @@
 import React from "react";
 
-const ProductItem = () => {
+const ProductItem = ({size, color, grade, price}) => {
     return (
         <>
-        <h4>I'm an individual product</h4>
+        <h4>{size}&nbsp;{color}&nbsp;{grade}&nbsp;{price}</h4>
         </>
     );
 }
